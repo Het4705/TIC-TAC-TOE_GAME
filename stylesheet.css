@@ -1,0 +1,71 @@
+.btnclass {
+    box-shadow: 5px 6px 7px aqua;
+    height: 85px;
+    width: 85px;
+    font-size: 70px;
+    color: red;
+    background-color: rgba(0, 0, 0, 0.495);
+}
+
+.btnclass:hover {
+    box-shadow: 6px 7px 10px greenyellow;
+    height: 80px;
+    width: 80px;
+    margin: 4px;
+    border: #fdfdfd 2px solid;
+    cursor: pointer;
+
+}
+
+.reset {
+    font-family: monospace;
+    color: black;
+    position: relative;
+    top: 20rem;
+    width: 4rem;
+    left: 17rem;
+}
+
+body {
+    background-color: black;
+}
+
+.mainarea {
+    display: inline;
+    position: relative;
+    left: 2rem;
+    /* right: 1rem; */
+    top: -2rem;
+}
+
+#chanceIndicator {
+
+    font-family: monospace;
+    display: inline;
+    color: #117401;
+
+    font-size: 23px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 8px;
+
+}
+
+.glow {
+    font-size: 76px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da5, 0 0 80px #ff4da6;
+    }
+
+}
