@@ -8,23 +8,25 @@ var audio = document.getElementById('audio');
 function reset() {
     location.reload();
 }
-function getturn() {
+
+function getturn() 
+{
     if (chance % 2 == 0) {
         turn = 'O'
-        document.getElementById("chanceIndicator").innerText = "Player 1 (X) chance ";
+        document.getElementById("chanceIndicator").innerText = "X chance ";
     }
     else {
         turn = 'X'
-        document.getElementById("chanceIndicator").innerText = "Player 2 (O) chance ";
+        document.getElementById("chanceIndicator").innerText = "O chance ";
     }
     chance++;
 }
-function stopbutton() {
+function stopbutton()
+ {
     for (i = 0; i < array.length; i++) {
         array[i] = 1;
     }
     checkreset = 1;
-
 }
 
 
@@ -41,20 +43,18 @@ function checkwin() {
 
     if (btn1 == btn2 && btn1 == btn3 && btn1 == 'X') {
 
-        document.getElementById("chanceIndicator").style.color = "red";
+        document.getElementById("chanceIndicator").style.color = "white";
         document.getElementById("chanceIndicator").style.font = "bold";
         document.getElementById("chanceIndicator").innerText = "Player 1 Wins";
         document.getElementById("btn1").style.background = "white";
         document.getElementById("btn2").style.background = "white";
         document.getElementById("btn3").style.background = "white";
-
-
         stopbutton();
 
     }
     else if (btn1 == btn2 && btn1 == btn3 && btn1 == 'O') {
 
-        document.getElementById("chanceIndicator").style.color = "red";
+        document.getElementById("chanceIndicator").style.color = "white";
         document.getElementById("chanceIndicator").style.font = "bold";
         document.getElementById("chanceIndicator").innerText = "Player 2 Wins";
         document.getElementById("btn1").style.background = "white";
@@ -63,7 +63,7 @@ function checkwin() {
         stopbutton();
     }
     else if (btn4 == btn5 && btn4 == btn6 && btn4 == 'X') {
-        document.getElementById("chanceIndicator").style.color = "red";
+        document.getElementById("chanceIndicator").style.color = "white";
         document.getElementById("chanceIndicator").style.font = "bold";
         document.getElementById("chanceIndicator").innerText = "Player 1 Wins";
         document.getElementById("btn4").style.background = "white";
@@ -72,7 +72,7 @@ function checkwin() {
         stopbutton();
     }
     else if (btn4 == btn5 && btn4 == btn6 && btn4 == 'O') {
-        document.getElementById("chanceIndicator").style.color = "red";
+        document.getElementById("chanceIndicator").style.color = "white";
         document.getElementById("chanceIndicator").style.font = "bold";
         document.getElementById("chanceIndicator").innerText = "Player 2 Wins";
         document.getElementById("btn4").style.background = "white";
@@ -81,7 +81,7 @@ function checkwin() {
         stopbutton();
     }
     else if (btn7 == btn8 && btn7 == btn9 && btn7 == 'X') {
-        document.getElementById("chanceIndicator").style.color = "red";
+        document.getElementById("chanceIndicator").style.color = "white";
         document.getElementById("chanceIndicator").style.font = "bold";
         document.getElementById("chanceIndicator").innerText = "Player 1 Wins";
         document.getElementById("btn7").style.background = "white";
@@ -90,7 +90,7 @@ function checkwin() {
         stopbutton();
     }
     else if (btn7 == btn8 && btn7 == btn9 && btn7 == 'O') {
-        document.getElementById("chanceIndicator").style.color = "red";
+        document.getElementById("chanceIndicator").style.color = "white";
         document.getElementById("chanceIndicator").style.font = "bold";
         document.getElementById("chanceIndicator").innerText = "Player 2 Wins";
         document.getElementById("btn7").style.background = "white";
@@ -100,7 +100,7 @@ function checkwin() {
     }
     //col
     else if (btn1 == btn4 && btn1 == btn7 && btn1 == 'X') {
-        document.getElementById("chanceIndicator").style.color = "red";
+        document.getElementById("chanceIndicator").style.color = "white";
         document.getElementById("chanceIndicator").style.font = "bold";
         document.getElementById("chanceIndicator").innerText = "Player 1 Wins";
         document.getElementById("btn1").style.background = "white";
@@ -109,7 +109,7 @@ function checkwin() {
         stopbutton();
     }
     else if (btn1 == btn4 && btn1 == btn7 && btn1 == 'O') {
-        document.getElementById("chanceIndicator").style.color = "red";
+        document.getElementById("chanceIndicator").style.color = "white";
         document.getElementById("chanceIndicator").style.font = "bold";
         document.getElementById("chanceIndicator").innerText = "Player 2 Wins";
         document.getElementById("btn1").style.background = "white";
@@ -118,7 +118,7 @@ function checkwin() {
         stopbutton();
     }
     else if (btn2 == btn5 && btn2 == btn8 && btn2 == 'X') {
-        document.getElementById("chanceIndicator").style.color = "red";
+        document.getElementById("chanceIndicator").style.color = "white";
         document.getElementById("chanceIndicator").style.font = "bold";
         document.getElementById("chanceIndicator").innerText = "Player 1 Wins";
         document.getElementById("btn2").style.background = "white";
@@ -127,7 +127,7 @@ function checkwin() {
         stopbutton();
     }
     else if (btn2 == btn5 && btn2 == btn8 && btn2 == 'O') {
-        document.getElementById("chanceIndicator").style.color = "red";
+        document.getElementById("chanceIndicator").style.color = "white";
         document.getElementById("chanceIndicator").style.font = "bold";
         document.getElementById("chanceIndicator").innerText = "Player 2 Wins";
         document.getElementById("btn2").style.background = "white";
@@ -136,7 +136,7 @@ function checkwin() {
         stopbutton();
     }
     else if (btn3 == btn6 && btn3 == btn9 && btn3 == 'X') {
-        document.getElementById("chanceIndicator").style.color = "red";
+        document.getElementById("chanceIndicator").style.color = "white";
         document.getElementById("chanceIndicator").style.font = "bold";
         document.getElementById("chanceIndicator").innerText = "Player 1 Wins";
         document.getElementById("btn3").style.background = "white";
@@ -145,7 +145,7 @@ function checkwin() {
         stopbutton();
     }
     else if (btn3 == btn6 && btn3 == btn9 && btn3 == 'O') {
-        document.getElementById("chanceIndicator").style.color = "red";
+        document.getElementById("chanceIndicator").style.color = "white";
         document.getElementById("chanceIndicator").style.font = "bold";
         document.getElementById("chanceIndicator").innerText = "Player 2 Wins";
         document.getElementById("btn3").style.background = "white";
@@ -155,7 +155,7 @@ function checkwin() {
     }
     //diagonal
     else if (btn1 == btn5 && btn1 == btn9 && btn1 == 'X') {
-        document.getElementById("chanceIndicator").style.color = "red";
+        document.getElementById("chanceIndicator").style.color = "white";
         document.getElementById("chanceIndicator").style.font = "bold";
         document.getElementById("chanceIndicator").innerText = "Player 1 Wins";
         document.getElementById("btn1").style.background = "white";
@@ -164,7 +164,7 @@ function checkwin() {
         stopbutton();
     }
     else if (btn1 == btn5 && btn1 == btn9 && btn1 == 'O') {
-        document.getElementById("chanceIndicator").style.color = "red";
+        document.getElementById("chanceIndicator").style.color = "white";
         document.getElementById("chanceIndicator").style.font = "bold";
         document.getElementById("chanceIndicator").innerText = "Player 2 Wins";
         document.getElementById("btn1").style.background = "white";
@@ -173,7 +173,7 @@ function checkwin() {
         stopbutton();
     }
     else if (btn3 == btn5 && btn3 == btn7 && btn3 == 'X') {
-        document.getElementById("chanceIndicator").style.color = "red";
+        document.getElementById("chanceIndicator").style.color = "white";
         document.getElementById("chanceIndicator").style.font = "bold";
         document.getElementById("chanceIndicator").innerText = "Player 1 Wins";
         document.getElementById("btn3").style.background = "white";
@@ -182,7 +182,7 @@ function checkwin() {
         stopbutton();
     }
     else if (btn3 == btn5 && btn3 == btn7 && btn3 == 'O') {
-        document.getElementById("chanceIndicator").style.color = "red";
+        document.getElementById("chanceIndicator").style.color = "white";
         document.getElementById("chanceIndicator").style.font = "bold";
         document.getElementById("chanceIndicator").innerText = "Player 2 Wins";
         document.getElementById("btn3").style.background = "white";
@@ -215,7 +215,6 @@ function hfun(elementID) {
         getturn();
         document.getElementById('btn2').value = turn;
         array[1] = 1;
-
         // document.getElementById('btn2').disabled=true;
     }
     else if (elementID === 'btn3' && array[2] == 0) {
@@ -228,7 +227,6 @@ function hfun(elementID) {
     else if (elementID === 'btn4' && array[3] == 0) {
         clickCount++;
         getturn();
-
         document.getElementById('btn4').value = turn;
         array[3] = 1;
         // document.getElementById('btn4').disabled=true;
@@ -272,6 +270,4 @@ function hfun(elementID) {
         alert("It's a Tie Please Reset ");
     }
     checkwin();
-
-
 }

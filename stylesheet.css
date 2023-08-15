@@ -16,14 +16,30 @@
     cursor: pointer;
 
 }
+.parent-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .reset {
-    font-family: monospace;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: black;
-    position: relative;
-    top: 20rem;
-    width: 4rem;
-    left: 17rem;
+    background-color:rgb(255, 255, 255);
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 10px;
+    width: 50px;
+    height: 25px;
+
+
+}
+.reset:hover
+{
+    width: 55px;
+    height: 30px;
+    background-color: #fdfdfd;
+    box-shadow: 2px 2px 5px greenyellow;
 }
 
 body {
@@ -41,12 +57,9 @@ body {
 #chanceIndicator {
 
     font-family: monospace;
-    display: inline;
-    color: #117401;
-
+    color: #6ee15c;
     font-size: 23px;
     padding: 5px;
-    background-color: white;
     border-radius: 8px;
 
 }

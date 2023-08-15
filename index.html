@@ -8,36 +8,44 @@
     <link rel="stylesheet" href="stylesheet.css">
     <script src="logic.js"></script>
     <title>GAME</title>
-  
+
 
 </head>
 
 <body>
-    <audio id="audio" src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"></audio>
     <h1 class="glow"> TIC TAC TOE</h1>
-    <input type="reset" class="reset" onclick="reset();">
-    <div class="mainarea">
+    <div class="parent-main">
+        
+        <div class="mainarea">
+            <table>
+                <tr>
+                    <td><input class="btnclass" type="button" id="btn1" onclick="hfun('btn1');"> </td>
+                    <td><input class="btnclass" type="button" id="btn2" onclick="hfun('btn2');"> </td>
+                    <td><input class="btnclass" type="button" id="btn3" onclick="hfun('btn3');"> </td>
+                </tr>
+                <tr>
+                    <td><input class="btnclass" type="button" id="btn4" onclick="hfun('btn4');"> </td>
+                    <td><input class="btnclass" type="button" id="btn5" onclick="hfun('btn5');"> </td>
+                    <td><input class="btnclass" type="button" id="btn6" onclick="hfun('btn6');"> </td>
+                </tr>
+                <tr>
+                    <td> <input class="btnclass" type="button" id="btn7" onclick="hfun('btn7');"> </td>
+                    <td> <input class="btnclass" type="button" id="btn8" onclick="hfun('btn8');"> </td>
+                    <td> <input class="btnclass" type="button" id="btn9" onclick="hfun('btn9');"> </td>
+                </tr>
 
-        <table>
-            <tr>
-                <td><input class="btnclass" type="button" id="btn1" onclick="hfun('btn1');"> </td>
-                <td><input class="btnclass" type="button" id="btn2" onclick="hfun('btn2');"> </td>
-                <td><input class="btnclass" type="button" id="btn3" onclick="hfun('btn3');"> </td>
-            </tr>
-            <tr>
-                <td><input class="btnclass" type="button" id="btn4" onclick="hfun('btn4');"> </td>
-                <td><input class="btnclass" type="button" id="btn5" onclick="hfun('btn5');"> </td>
-                <td><input class="btnclass" type="button" id="btn6" onclick="hfun('btn6');"> </td>
-            </tr>
-            <tr>
-                <td> <input class="btnclass" type="button" id="btn7" onclick="hfun('btn7');"> </td>
-                <td> <input class="btnclass" type="button" id="btn8" onclick="hfun('btn8');"> </td>
-                <td> <input class="btnclass" type="button" id="btn9" onclick="hfun('btn9');"> </td>
-            </tr>
-        </table>
+            </table>
+            <table>
+                <tr>
+                    <td><input type="reset" class="reset" onclick="reset();"></td>
+                    <td>
+                        <h3 id="chanceIndicator"> X Chance </h3>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
-    <br>
-    <h3 id="chanceIndicator"> Player 1 (X) chance </h3>
+
 </body>
 
 </html>
